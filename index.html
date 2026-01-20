@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>جامعة الزهراء - منارة علمية متميزة</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <!-- Header (White with Shadow) -->
+  <header id="header">
+    <div class="container">
+      <nav>
+        <a href="#" class="logo">
+          <!-- Added a style to ensure logo visibility if it's transparent/dark -->
+          <img src="image/logo.png" alt="">
+        </a>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#home">الرئيسية</a></li>
+          <li><a href="#about">عن الجامعة</a></li>
+          <li><a href="#faculties">الكليات</a></li>
+          <li><a href="#gallery">المعرض</a></li>
+          <li><a href="#contact">تواصل معنا</a></li>
+        </ul>
+        <div class="mobile-menu-btn" id="menuBtn">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-video-container">
+      <!-- تم تحديث رابط الفيديو برابط مباشر ومستقر -->
+      <video autoplay muted loop playsinline
+        poster="https://images.unsplash.com/photo-1541339907198-e08756dedf3f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80">
+        <source src="video/hero.mp4" type="video/mp4">
+        متصفحك لا يدعم تشغيل الفيديو.
+      </video>
+    </div>
+    <div class="overlay"></div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="section-padding reveal">
+    <div class="container">
+      <div class="section-title">
+        <h2>نبذة عن الجامعة</h2>
+        <span></span>
+      </div>
+      <div class="about-content">
+        <div class="about-text">
+          <h3>رؤية مستقبلية وأهداف طموحة</h3>
+          <p>
+            جامعة الزهراء هي مؤسسة تعليمية تأسست عام 2014، تهدف إلى تقديم تعليم جامعي عالي المستوى يلبي احتياجات المجتمع
+            المعرفية. نحن مؤسسة ذات نفع عام وشخصية قانونية مستقلة.
+          </p>
+          <ul class="about-list">
+            <li>
+              <i class="fa-solid fa-eye"></i>
+              <div>الرؤية: تبوء مكانة دولية مرموقة كمنارة علمية.</div>
+            </li>
+            <li>
+              <i class="fa-solid fa-scroll"></i>
+              <div>الرسالة: إعداد جيل أكاديمي متخصص وقيمي.</div>
+            </li>
+            <li>
+              <i class="fa-solid fa-bullseye"></i>
+              <div>الأهداف: التميز في المناهج والبحث العلمي.</div>
+            </li>
+          </ul>
+        </div>
+        <div class="about-image">
+          <img src="image/about.jpeg" alt="طلاب جامعة الزهراء">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Faculties Section (Cards) -->
+  <section id="faculties" class="section-padding faculties reveal">
+    <div class="container">
+      <div class="section-title">
+        <h2>الكليات والبرامج الأكاديمية</h2>
+        <span></span>
+      </div>
+      <div class="cards-grid" id="cardsGrid">
+        <!-- Sharia -->
+        <div class="card">
+          <div class="card-icon">
+            <i class="fa-solid fa-scale-balanced"></i>
+          </div>
+          <div class="card-body">
+            <h3>الشريعة والدراسات الإسلامية</h3>
+            <p>تُعنى بدراسة العلوم الشرعية والقانونية وفق منهج علمي أكاديمي رصين.</p>
+            <a href="javascript:void(0)" class="btn btn-primary details-btn" data-id="sharia">التفاصيل</a>
+          </div>
+        </div>
+
+        <!-- Ayat (Quran) -->
+        <div class="card">
+          <div class="card-icon">
+            <i class="fa-solid fa-book-quran"></i>
+          </div>
+          <div class="card-body">
+            <h3>كلية آيات للقرآن وعلومه</h3>
+            <p>تختص بدراسة القرآن الكريم وعلومه، من تفسير وقراءات وعلوم قرآن.</p>
+            <a href="javascript:void(0)" class="btn btn-primary details-btn" data-id="ayat">التفاصيل</a>
+          </div>
+        </div>
+
+        <!-- Education -->
+        <div class="card">
+          <div class="card-icon">
+            <i class="fa-solid fa-chalkboard-user"></i>
+          </div>
+          <div class="card-body">
+            <h3>كلية العلوم التربوية والنفسية</h3>
+            <p>تهدف إلى إعداد كوادر تربوية متخصصة في التعليم والإرشاد النفسي.</p>
+            <a href="javascript:void(0)" class="btn btn-primary details-btn" data-id="education">التفاصيل</a>
+          </div>
+        </div>
+
+        <!-- Computer Engineering -->
+        <div class="card">
+          <div class="card-icon">
+            <i class="fa-solid fa-laptop-code"></i>
+          </div>
+          <div class="card-body">
+            <h3>كلية هندسة الحاسوب</h3>
+            <p>تركز على تزويد الطلبة بمهارات تقنية حديثة في هندسة الحاسوب والبرمجيات.</p>
+            <a href="javascript:void(0)" class="btn btn-primary details-btn" data-id="computer">التفاصيل</a>
+          </div>
+        </div>
+
+        <!-- Arabic -->
+        <div class="card">
+          <div class="card-icon">
+            <i class="fa-solid fa-pen-nib"></i>
+          </div>
+          <div class="card-body">
+            <h3>كلية اللغة العربية</h3>
+            <p>تهتم بدراسة اللغة العربية وآدابها والنقد الأدبي للحفاظ على التراث اللغوي.</p>
+            <a href="javascript:void(0)" class="btn btn-primary details-btn" data-id="arabic">التفاصيل</a>
+          </div>
+        </div>
+
+        <!-- Economics -->
+        <div class="card">
+          <div class="card-icon">
+            <i class="fa-solid fa-chart-line"></i>
+          </div>
+          <div class="card-body">
+            <h3>الاقتصاد والعلوم الإدارية</h3>
+            <p>تُعنى بإعداد متخصصين في المجالات الاقتصادية والإدارية والمحاسبية.</p>
+            <a href="javascript:void(0)" class="btn btn-primary details-btn" data-id="economics">التفاصيل</a>
+          </div>
+        </div>
+
+        <!-- Technical Institute -->
+        <div class="card">
+          <div class="card-icon">
+            <i class="fa-solid fa-gears"></i>
+          </div>
+          <div class="card-body">
+            <h3>المعهد التقني الهندسي</h3>
+            <p>يوفر برامج تقنية تطبيقية في الإلكترونيات والشبكات والصيانة لتأهيل الطلاب لسوق العمل.</p>
+            <a href="javascript:void(0)" class="btn btn-primary details-btn" data-id="institute">التفاصيل</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Academic Info Accordion -->
+  <section class="section-padding reveal" style="background-color: #F8F9FA;">
+    <div class="container">
+      <div class="section-title">
+        <h2>أنظمة التعليم والقبول</h2>
+        <span></span>
+      </div>
+      <div class="accordion-container">
+        <!-- Item 1 -->
+        <div class="accordion-item">
+          <div class="accordion-header">
+            <h4>نظام التعليم المدمج</h4>
+            <i class="fa-solid fa-chevron-down"></i>
+          </div>
+          <div class="accordion-body">
+            <div class="accordion-content">
+              تقدم الجامعة خيارات متطورة للتعليم المدمج الذي يجمع بمرونة بين الدراسة الحضورية والتعلم الإلكتروني، مما
+              يتيح للطلاب الاستفادة القصوى من الموارد التعليمية المتاحة.
+            </div>
+          </div>
+        </div>
+        <!-- Item 2 -->
+        <div class="accordion-item">
+          <div class="accordion-header">
+            <h4>طريقة الدراسة والمقررات</h4>
+            <i class="fa-solid fa-chevron-down"></i>
+          </div>
+          <div class="accordion-body">
+            <div class="accordion-content">
+              تعتمد الجامعة نظام الفصول الدراسية، وتقسم المقررات إلى: مقررات أساسية مشتركة، مقررات خاصة بكل كلية،
+              ومقررات تخصصية دقيقة لضمان التكوين العلمي الرصين.
+            </div>
+          </div>
+        </div>
+        <!-- Item 3 -->
+        <div class="accordion-item">
+          <div class="accordion-header">
+            <h4>إجراءات القبول والتسجيل</h4>
+            <i class="fa-solid fa-chevron-down"></i>
+          </div>
+          <div class="accordion-body">
+            <div class="accordion-content">
+              يتم قبول الطلبة بعد استيفاء شروط القبول العامة وترتيب الرغبات في استمارة التقديم. يتم التواصل مع الطالب
+              مباشرة لاستكمال الإجراءات.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats Section (Angled Background) -->
+  <section class="stats">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-item">
+          <i class="fa-solid fa-calendar-check"></i>
+          <span class="stat-number" data-target="2014">0</span>
+          <span class="stat-label">سنة التأسيس</span>
+        </div>
+        <div class="stat-item">
+          <i class="fa-solid fa-university"></i>
+          <span class="stat-number" data-target="7">0</span>
+          <span class="stat-label">كليات ومعاهد</span>
+        </div>
+        <div class="stat-item">
+          <i class="fa-solid fa-graduation-cap"></i>
+          <span class="stat-number" data-target="1500">0</span>
+          <span class="stat-label">طالب وطالبة</span>
+        </div>
+        <div class="stat-item">
+          <i class="fa-solid fa-chalkboard-user"></i>
+          <span class="stat-number" data-target="100">0</span>
+          <span class="stat-label">عضو هيئة تدريس</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery Section (FIXED HOVER) -->
+  <section id="gallery" class="section-padding reveal">
+    <div class="container">
+      <div class="section-title">
+        <h2>معرض الصور</h2>
+        <span></span>
+      </div>
+      <div class="gallery-grid">
+        <!-- Added onclick via JS logic to .gallery-item -->
+        <div class="gallery-item">
+          <img src="image/1.JPG" alt="قاعة دراسية" loading="lazy">
+          <div class="gallery-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+        </div>
+        <div class="gallery-item">
+          <img src="image/2.JPG" alt="مكتبة" loading="lazy">
+          <div class="gallery-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+        </div>
+        <div class="gallery-item">
+          <img src="image/3.JPG" alt="الحرم الجامعي" loading="lazy">
+          <div class="gallery-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+        </div>
+        <div class="gallery-item">
+          <img src="image/4.JPG" alt="كتب" loading="lazy">
+          <div class="gallery-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+        </div>
+        <div class="gallery-item">
+          <img src="image/5.JPG" alt="مختبر حاسوب" loading="lazy">
+          <div class="gallery-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+        </div>
+        <div class="gallery-item">
+          <img src="image/6.JPG" alt="مكتبة" loading="lazy">
+          <div class="gallery-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+        </div>
+        <div class="gallery-item">
+          <img src="image/7.JPG" alt="مكتبة" loading="lazy">
+          <div class="gallery-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+        </div>
+        <div class="gallery-item">
+          <img src="image/8.JPG" alt="قاعة دراسية" loading="lazy">
+          <div class="gallery-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+        </div>
+                <div class="gallery-item">
+          <img src="image/9.JPG" alt="قاعة دراسية" loading="lazy">
+          <div class="gallery-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+        </div>
+
+      </div>
+  </section>
+
+  <!-- Why Us Section -->
+  <section class="section-padding reveal">
+    <div class="container">
+      <div class="section-title">
+        <h2>لماذا جامعة الزهراء؟</h2>
+        <span></span>
+      </div>
+      <div class="features-grid">
+        <div class="feature-item">
+          <div class="feature-icon"><i class="fa-solid fa-hand-holding-heart"></i></div>
+          <div class="feature-text">
+            <h4>مؤسسة غير ربحية</h4>
+            <p>هدفنا الأساسي هو خدمة المجتمع ونشر العلم، مما يجعلنا نركز على الجودة الأكاديمية قبل الربح المادي.</p>
+          </div>
+        </div>
+        <div class="feature-item">
+          <div class="feature-icon"><i class="fa-solid fa-laptop-file"></i></div>
+          <div class="feature-text">
+            <h4>تعليم مدمج ومرن</h4>
+            <p>نواكب العصر من خلال دمج التعليم التقليدي مع الإلكتروني، لتوفير تجربة تعليمية مرنة وشاملة.</p>
+          </div>
+        </div>
+        <div class="feature-item">
+          <div class="feature-icon"><i class="fa-solid fa-scale-balanced"></i></div>
+          <div class="feature-text">
+            <h4>منهج متوازن</h4>
+            <p>نجمع بين العلوم الحديثة والقيم الإنسانية والإسلامية المعتدلة لبناء شخصية متكاملة للطالب.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer id="contact">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-about">
+          <a href="#" class="logo" style="margin-bottom: 20px; color: #fff;">
+            <img src="image/logo.png" alt="" style="background: white; border-radius: 50%;">
+            &nbsp; جامعة الزهراء
+          </a>
+          <p>مؤسسة تعليمية رائدة تأسست عام 2014، تسعى للتميز في المناهج التعليمية والأكاديمية ومواكبة مجالات المعرفة
+            الحديثة.</p>
+          <div class="social-links">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+          </div>
+        </div>
+        <div class="footer-links">
+          <h4 class="footer-title">روابط سريعة</h4>
+          <ul>
+            <li><a href="#about">عن الجامعة</a></li>
+            <li><a href="#faculties">الكليات والبرامج</a></li>
+            <li><a href="#">القبول والتسجيل</a></li>
+            <li><a href="mailto:zah.stu@alzahraa.university">شؤون الطلاب</a></li>
+          </ul>
+        </div>
+        <div class="contact-info">
+          <h4 class="footer-title">تواصل معنا</h4>
+          <ul>
+            <li>
+              <div class="contact-icon-box"><i class="fa-solid fa-location-dot"></i></div>
+              <span>23 Nisan, Sahinbey, Gaziantep</span>
+            </li>
+            <li>
+              <div class="contact-icon-box"><i class="fa-solid fa-phone"></i></div>
+              <span>00905319666611</span>
+            </li>
+            <li>
+              <div class="contact-icon-box"><i class="fa-solid fa-phone"></i></div>
+              <span>00905372239445</span>
+            </li>
+            <li>
+              <div class="contact-icon-box"><i class="fa-solid fa-envelope"></i></div>
+              <span>info@alzahraa.university</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>جميع الحقوق محفوظة &copy; 2014 جامعة الزهراء</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Lightbox Modal -->
+  <div class="lightbox" id="lightbox">
+    <span class="close-lightbox" id="closeLightbox">&times;</span>
+    <img src="" alt="Full Image" id="lightboxImg">
+  </div>
+
+  <!-- Faculty Details Modal (NEW) -->
+  <div class="faculty-modal-overlay" id="facultyModal">
+    <div class="faculty-modal">
+      <div class="modal-header">
+        <h3 id="modalTitle">عنوان الكلية</h3>
+        <div class="modal-close" id="closeFacultyModal">
+          <i class="fa-solid fa-xmark"></i>
+        </div>
+      </div>
+      <div class="modal-body" id="modalContent">
+        <!-- Content will be injected by JS -->
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
